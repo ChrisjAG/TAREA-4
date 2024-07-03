@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>Algoritmo y Lógica de Programación</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../img/logo.png" alt="Lógica de Programación" width="80">
+        </div>
+        <div class="title-container">
+            <h1>Algoritmo y Lógica de Programación</h1>
+            <h5><i>Blog dedicado a desarrollar lógica de programación aplicando el lenguaje JavaScript</i></h5>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <header>
+                <h5>Presentar los nombres que no sean "Ana" de un arreglo</h5>
+            </header>
+            <form onsubmit="event.preventDefault(); filtrarNombres();">
+                <label for="nombres">Ingrese nombres separados por comas:</label>
+                <input type="text" id="nombres" name="nombres" required>
+                <button type="submit" class="boton">Filtrar Nombres</button><br>
+                <a href="./menuejercicios.html" class="button-link">Regresar Al Menu</a>
+                <div id="resultadoNombres">
+                    Aquí va a ir la respuesta:
+                </div>
+            </form>
+        </section>
+    </main>
+    <div>
+        <aside>
+            <h3>Explicación:</h3>
+            <p>-Usar un bucle for para iterar a través del arreglo:</p>
+            <p>-for (let i = 0; i < nombres.length; i++) itera a través del arreglo.</p> 
+            <p>-if (nombres[i] !== "Ana") verifica si el nombre no es "Ana".</p>
+        </aside>
+
+    </div>
+    <a class="regresar" href="../index.html">Regresar al Menu Principal</a>
+    <footer>
+        <p><h6>ChrSoft - derechos reservados...</h6></p>
+    </footer>
+    <script src="../js/main copy.js"></script>
+</body>
+</html>

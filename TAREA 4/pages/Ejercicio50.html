@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>Algoritmo y Lógica de Programación</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../img/logo.png" alt="Lógica de Programación" width="80">
+        </div>
+        <div class="title-container">
+            <h1>Algoritmo y Lógica de Programación</h1>
+            <h5><i>Blog dedicado a desarrollar lógica de programación aplicando el lenguaje JavaScript</i></h5>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <header>
+                <h5>Presentar las palabras de una frase, asumiendo un solo espacio entre ellas</h5>
+            </header>
+            <form onsubmit="event.preventDefault(); presentarPalabras();">
+                <label for="frase">Ingrese una frase:</label>
+                <input type="text" id="frase" name="frase" required>
+                <button type="submit" class="boton">Presentar Palabras</button><br>
+                <a href="./menuejercicios.html" class="button-link">Regresar Al Menu</a>
+                <div id="resultadoPalabras">
+                    Aquí va a ir la respuesta:
+                </div>
+            </form>
+        </section>
+    </main>
+    <div>
+        <aside>
+            <h3>Explicación:</h3>
+            <p>-let palabras = frase.split(" ") divide la frase en un arreglo de palabras.</p> 
+            <p>-for (let i = 0; i < palabras.length; i++) itera a través del arreglo de palabras.</p>
+        </aside>
+
+    </div>
+    <a class="regresar" href="../index.html">Regresar al Menu Principal</a>
+    <footer>
+        <p><h6>ChrSoft - derechos reservados...</h6></p>
+    </footer>
+    <script src="../js/main copy.js"></script>
+</body>
+</html>

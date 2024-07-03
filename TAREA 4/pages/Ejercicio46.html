@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>Algoritmo y Lógica de Programación</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../img/logo.png" alt="Lógica de Programación" width="80">
+        </div>
+        <div class="title-container">
+            <h1>Algoritmo y Lógica de Programación</h1>
+            <h5><i>Blog dedicado a desarrollar lógica de programación aplicando el lenguaje JavaScript</i></h5>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <header>
+                <h5>El mayor de los elementos de un arreglo</h5>
+            </header>
+            <form onsubmit="event.preventDefault(); encontrarMayor();">
+                <label for="numerosMayor">Ingrese números separados por comas:</label>
+                <input type="text" id="numerosMayor" name="numerosMayor" required>
+                <button type="submit" class="boton">Encontrar Mayor</button><br>
+                <a href="./menuejercicios.html" class="button-link">Regresar Al Menu</a>
+                <div id="resultadoMayor">
+                    Aquí va a ir la respuesta:
+                </div>
+            </form>
+        </section>
+    </main>
+    <div>
+        <aside>
+            <h3>Explicación:</h3>
+            <p>-Declarar un arreglo con números.</p>
+            <p>-let mayor = numeros[0] supone que el primer elemento es el mayor.</p> 
+            <p>-for (let i = 1; i < numeros.length; i++) itera desde el segundo elemento.</p>
+            <P>-if (numeros[i] > mayor) actualiza mayor si se encuentra un número más grande.</P>
+        </aside>
+
+    </div>
+    <a class="regresar" href="../index.html">Regresar al Menu Principal</a>
+    <footer>
+        <p><h6>ChrSoft - derechos reservados...</h6></p>
+    </footer>
+    <script src="../js/main copy.js"></script>
+</body>
+</html>

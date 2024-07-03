@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Asegura que el cuerpo y el HTML ocupen toda la altura */
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 0px 0;
+    text-align: center;
+    border-bottom: 4px solid #ff6347;
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 10px 0;
+}
+
+header h5 {
+    font-style: italic;
+    color: #ddd;
+}
+
+nav.menu {
+    flex: 1; /* Hace que el contenedor del menú ocupe todo el espacio disponible */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    background-color: #fff4f4;
+}
+
+nav.menu ol {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Hace que la lista ocupe toda la anchura del contenedor del menú */
+    text-align: center; /* Centra los elementos horizontalmente */
+}
+
+nav.menu li {
+    margin: 10px 0; /* Añade un margen entre los elementos del menú */
+}
+
+nav.menu a {
+    color: #000000;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 32px; /* Ajusta el tamaño de la fuente aquí */
+    border-radius: 10px;
+    display: inline-block; /* Hace que el enlace ocupe solo el ancho del texto */
+    transition: background-color 0.3s, color 0.3s; /* Añade una transición para un efecto suave */
+    box-shadow: 0 1px 10px rgba(156, 156, 156, 0.5);
+
+}
+
+nav.menu a:hover {
+    background-color: #ff6347;
+    border-radius: 10px; /* Añade bordes redondeados si lo deseas */
+}
+
+h2 {
+    font-family: 'Rubik';
+    text-align: center;
+    font-size: 32px;
+    margin: 5px 0; /* Reduce el margen superior e inferior */
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+footer h6 {
+    margin: 0;
+}
+
+button {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 5px; 
+}
+
+button:hover {
+    background-color: #333;
+}
+
